@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Contato</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    
+    <div class="container">
+
+        <h1>Agenda de Contatos</h1>
+        
+        <form id="formContato">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="telefone" name="telefone" pattern="\d{10,}" title="Informe um número de telefone válido (mínimo 10 dígitos)" required>
+            <button type="button" onclick="verificarCadastro()">Cadastrar</button>
+        </form>
+        
+        <table id="tabelaContatos">
+            <tr>
+                <th>Nome</th>
+                <th>Telefone</th>
+            </tr>
+        </table>
+        
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
